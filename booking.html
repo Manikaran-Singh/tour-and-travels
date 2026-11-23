@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Trip | WanderGlow (Demo)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+  <div class="wallpaper" aria-hidden="true">
+    <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+  </div>
+
+  <header class="navbar glass">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="WanderGlow home"><span class="logo-icon" aria-hidden="true">✈️</span>WanderGlow</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="index.html#packages">Tour Packages</a></li>
+          <li><a href="index.html#why-us">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="booking.html" class="btn small">Book a Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container booking">
+    <div class="booking-grid">
+
+      <aside class="booking-info glass">
+        <span class="eyebrow">Book a Trip</span>
+        <h1>Plan your <span class="grad-text">dream journey</span></h1>
+        <p>Fill in the form to see how a premium glass booking experience looks and feels.</p>
+        <ul>
+          <li>🧭 Choose from six sample destinations</li>
+          <li>📅 Pick dates, travellers and nights</li>
+          <li>🎁 Select a package preference</li>
+          <li>📝 Add any special requests</li>
+        </ul>
+        <div class="demo-banner"><strong>Static demo:</strong> this form has no backend. Nothing is stored, confirmed or paid for when you press submit.</div>
+      </aside>
+
+      <form class="booking-form glass" action="#" method="get" aria-label="Booking form (static demo)">
+        <div class="form-grid">
+          <div class="field full">
+            <label for="name">Full name <span>*</span></label>
+            <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email <span>*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="mobile">Mobile number <span>*</span></label>
+            <input id="mobile" name="mobile" type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="destination">Destination <span>*</span></label>
+            <select id="destination" name="destination" required>
+              <option value="" selected disabled>Select destination</option>
+              <option>Manali, Himachal Pradesh</option>
+              <option>Goa, India</option>
+              <option>Kashmir, India</option>
+              <option>Bali, Indonesia</option>
+              <option>Switzerland</option>
+              <option>Dubai, UAE</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="start">Travel start date <span>*</span></label>
+            <input id="start" name="start" type="date" required>
+          </div>
+          <div class="field">
+            <label for="travellers">Number of travellers <span>*</span></label>
+            <input id="travellers" name="travellers" type="number" min="1" max="20" value="2" required>
+          </div>
+          <div class="field">
+            <label for="nights">Number of nights <span>*</span></label>
+            <input id="nights" name="nights" type="number" min="1" max="30" value="3" required>
+          </div>
+          <div class="field full">
+            <label for="package">Package preference</label>
+            <select id="package" name="package">
+              <option>Mountain Adventure</option>
+              <option>Beach Escape</option>
+              <option>Romantic Getaway</option>
+              <option>International Explorer</option>
+              <option>Custom / not sure yet</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="requests">Special requests</label>
+            <textarea id="requests" name="requests" placeholder="Dietary needs, celebrations, accessibility, etc."></textarea>
+          </div>
+        </div>
+        <button class="btn" type="submit">Submit Booking (Demo)</button>
+        <p class="demo-note">Submitting only reloads this page. No booking is created.</p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copy" style="border:none;margin:0;padding:0">© 2026 WanderGlow. Demo project · <a href="index.html">Home</a> · <a href="destinations.html">Destinations</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

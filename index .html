@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WanderGlow | Premium Travel Agency (Demo)</title>
+  <meta name="description" content="WanderGlow - a Liquid Glass style travel agency website demo built with HTML and CSS only.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wallpaper" aria-hidden="true">
+    <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+  </div>
+
+  <header class="navbar glass">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="WanderGlow home"><span class="logo-icon" aria-hidden="true">✈️</span>WanderGlow</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#why-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="booking.html" class="btn small">Book a Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Premium Travel Agency · Demo</span>
+            <h1>Discover Places <span class="grad-text">Beyond Imagination.</span></h1>
+            <p class="sub">Explore extraordinary destinations, unforgettable journeys, and experiences worth remembering.</p>
+            <div class="btn-row">
+              <a class="btn" href="destinations.html">Explore Destinations</a>
+              <a class="btn ghost" href="#packages">View Tour Packages</a>
+            </div>
+            <div class="badges">
+              <span class="badge">🏔️ Manali</span>
+              <span class="badge">🏝️ Bali</span>
+              <span class="badge">🔥 Monsoon Offer (sample)</span>
+              <span class="badge">💜 Honeymoon Deals (sample)</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-img">
+              <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=900&q=70" alt="Calm mountain lake surrounded by forest at sunrise" width="900" height="1100">
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual-only search panel -->
+        <div class="search-panel glass">
+          <form class="search-form" action="destinations.html" method="get" aria-label="Travel search (visual demo)">
+            <div class="field">
+              <label for="s-dest">Destination</label>
+              <input id="s-dest" name="destination" type="text" placeholder="e.g. Manali">
+            </div>
+            <div class="field">
+              <label for="s-date">Travel date</label>
+              <input id="s-date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="s-trav">Travellers</label>
+              <select id="s-trav" name="travellers">
+                <option>1 Traveller</option><option selected>2 Travellers</option><option>3 Travellers</option><option>4+ Travellers</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Browse Trips</button>
+          </form>
+          <p class="demo-note">Visual demo only: this panel does not perform a real search. The button simply opens the Destinations page.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section id="destinations">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Popular Destinations</span>
+          <h2>Where will you go next?</h2>
+          <p>Hand-picked places with illustrative starting prices (sample data).</p>
+        </div>
+        <div class="cards-3">
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=70" alt="Snow-capped Himalayan peaks near Manali" loading="lazy" width="800" height="550"><span class="tag">Mountains</span></div>
+            <div class="card-body"><h3>Manali, Himachal Pradesh</h3><p>Snowy peaks, pine forests and cosy mountain cafés.</p>
+              <div class="meta"><span>🕒 5 Days / 4 Nights</span><span class="price">₹7,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#manali">Explore Trip →</a></p></div>
+          </article>
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=70" alt="Golden sunset over a Goa beach with palm trees" loading="lazy" width="800" height="550"><span class="tag">Beaches</span></div>
+            <div class="card-body"><h3>Goa, India</h3><p>Sunset beaches, vibrant nightlife and Portuguese-era charm.</p>
+              <div class="meta"><span>🕒 4 Days / 3 Nights</span><span class="price">₹9,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#goa">Explore Trip →</a></p></div>
+          </article>
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=70" alt="Shikara boat on a calm lake in Kashmir" loading="lazy" width="800" height="550"><span class="tag">Valleys</span></div>
+            <div class="card-body"><h3>Kashmir, India</h3><p>Shikara rides, tulip gardens and snow-dusted valleys.</p>
+              <div class="meta"><span>🕒 6 Days / 5 Nights</span><span class="price">₹12,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#kashmir">Explore Trip →</a></p></div>
+          </article>
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=70" alt="Bali temple overlooking the ocean at sunset" loading="lazy" width="800" height="550"><span class="tag">Islands</span></div>
+            <div class="card-body"><h3>Bali, Indonesia</h3><p>Rice terraces, sea temples and tropical island calm.</p>
+              <div class="meta"><span>🕒 6 Days / 5 Nights</span><span class="price">₹34,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#bali">Explore Trip →</a></p></div>
+          </article>
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=70" alt="Swiss Alps village beside a bright blue lake" loading="lazy" width="800" height="550"><span class="tag">Alps</span></div>
+            <div class="card-body"><h3>Switzerland</h3><p>Alpine trains, glacier views and storybook villages.</p>
+              <div class="meta"><span>🕒 7 Days / 6 Nights</span><span class="price">₹89,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#switzerland">Explore Trip →</a></p></div>
+          </article>
+          <article class="card glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=70" alt="Dubai skyline with tall glass towers at dusk" loading="lazy" width="800" height="550"><span class="tag">City</span></div>
+            <div class="card-body"><h3>Dubai, UAE</h3><p>Futuristic skyline, desert safaris and luxury shopping.</p>
+              <div class="meta"><span>🕒 5 Days / 4 Nights</span><span class="price">₹39,999 <small>from*</small></span></div>
+              <p style="margin:10px 0 0"><a class="link-cta" href="destinations.html#dubai">Explore Trip →</a></p></div>
+          </article>
+        </div>
+        <p class="demo-note">*Prices are illustrative sample package prices, not real offers.</p>
+      </div>
+    </section>
+
+    <!-- TOUR PACKAGES -->
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Tour Packages</span>
+          <h2>Journeys designed around you</h2>
+          <p>Sample packages to show the layout. Prices are illustrative.</p>
+        </div>
+        <div class="cards-4">
+          <article class="card pkg glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=70" alt="Rocky mountain peaks above the clouds" loading="lazy" width="700" height="480"></div>
+            <div class="card-body">
+              <h3>Mountain Adventure</h3>
+              <div class="meta"><span>🕒 3 Days / 2 Nights</span><span class="price">₹6,499</span></div>
+              <ul><li>• Guided trekking trail</li><li>• Campfire evening</li><li>• Sunrise viewpoint</li></ul>
+              <div class="amenities" aria-label="Includes stay, meals, transport">🏨 🍽️ 🚐</div>
+              <div class="actions"><a class="btn ghost small" href="destinations.html#manali">View Details</a><a class="btn small" href="booking.html">Book This Trip</a></div>
+            </div>
+          </article>
+          <article class="card pkg glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=70" alt="Turquoise sea and white sand beach" loading="lazy" width="700" height="480"></div>
+            <div class="card-body">
+              <h3>Beach Escape</h3>
+              <div class="meta"><span>🕒 4 Days / 3 Nights</span><span class="price">₹9,999</span></div>
+              <ul><li>• Beachfront stay</li><li>• Water sports options</li><li>• Sunset cruise</li></ul>
+              <div class="amenities" aria-label="Includes stay, breakfast, transfers">🏨 🍳 🚐</div>
+              <div class="actions"><a class="btn ghost small" href="destinations.html#goa">View Details</a><a class="btn small" href="booking.html">Book This Trip</a></div>
+            </div>
+          </article>
+          <article class="card pkg glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=70" alt="Romantic tropical temple view at golden hour" loading="lazy" width="700" height="480"></div>
+            <div class="card-body">
+              <h3>Romantic Getaway</h3>
+              <div class="meta"><span>🕒 5 Days / 4 Nights</span><span class="price">₹24,999</span></div>
+              <ul><li>• Candle-light dinner</li><li>• Private villa stay</li><li>• Couple spa session</li></ul>
+              <div class="amenities" aria-label="Includes villa, dinner, spa">🏡 🕯️ 💆</div>
+              <div class="actions"><a class="btn ghost small" href="destinations.html#bali">View Details</a><a class="btn small" href="booking.html">Book This Trip</a></div>
+            </div>
+          </article>
+          <article class="card pkg glass">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=700&q=70" alt="Busy modern city skyline at night" loading="lazy" width="700" height="480"></div>
+            <div class="card-body">
+              <h3>International Explorer</h3>
+              <div class="meta"><span>🕒 7 Days / 6 Nights</span><span class="price">₹59,999</span></div>
+              <ul><li>• City sightseeing tours</li><li>• Local experiences</li><li>• Airport pickup</li></ul>
+              <div class="amenities" aria-label="Includes hotel, flights, tours">🏨 ✈️ 🗺️</div>
+              <div class="actions"><a class="btn ghost small" href="destinations.html#dubai">View Details</a><a class="btn small" href="booking.html">Book This Trip</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">All package details and prices are sample content for design demonstration.</p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>Travel with confidence</h2>
+        </div>
+        <div class="features">
+          <div class="feature glass"><span class="ico" aria-hidden="true">🧭</span><h3>Carefully Curated Trips</h3><p>Every itinerary is planned for comfort, variety and memorable moments.</p></div>
+          <div class="feature glass"><span class="ico" aria-hidden="true">🎒</span><h3>Experienced Travel Guides</h3><p>Friendly local guides who know the hidden gems.</p></div>
+          <div class="feature glass"><span class="ico" aria-hidden="true">💎</span><h3>Transparent Pricing</h3><p>Clear package details with no surprises in the plan.</p></div>
+          <div class="feature glass"><span class="ico" aria-hidden="true">📞</span><h3>24/7 Travel Assistance</h3><p>Support whenever you need it during your journey.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Travel Experiences</span>
+          <h2>Moments waiting for you</h2>
+        </div>
+        <div class="gallery">
+          <figure class="g-item g-big"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=70" alt="Mountain peaks" loading="lazy"><span>Mountains</span></figure>
+          <figure class="g-item"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=70" alt="Tropical beach" loading="lazy"><span>Beaches</span></figure>
+          <figure class="g-item"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=70" alt="Misty green forest" loading="lazy"><span>Forests</span></figure>
+          <figure class="g-item g-wide"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1000&q=70" alt="Peaceful lake" loading="lazy"><span>Lakes</span></figure>
+          <figure class="g-item"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=600&q=70" alt="City lights" loading="lazy"><span>Cities</span></figure>
+          <figure class="g-item g-wide"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=70" alt="Luxury resort pool" loading="lazy"><span>Luxury Stays</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What travellers might say</h2>
+          <p>Sample design content only, not verified customer reviews.</p>
+        </div>
+        <div class="testimonials">
+          <blockquote class="testi glass"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Sample review text showing how a glowing testimonial would look here."</p><strong>Aarav S. (sample)</strong><small>Trip: Manali</small></blockquote>
+          <blockquote class="testi glass"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Placeholder feedback about a smooth, well-planned beach holiday."</p><strong>Meera K. (sample)</strong><small>Trip: Goa</small></blockquote>
+          <blockquote class="testi glass"><div class="stars" aria-label="4 out of 5 stars">★★★★☆</div><p>"Another sample quote to demonstrate card spacing and typography."</p><strong>Rohan P. (sample)</strong><small>Trip: Bali</small></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="contact">
+      <div class="container">
+        <div class="newsletter glass">
+          <h2>Your Next Adventure Starts Here</h2>
+          <p>Get travel inspiration in your inbox. (Visual demo form.)</p>
+          <form class="news-form" action="#" method="get">
+            <label for="news-email" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+            <input id="news-email" type="email" name="email" placeholder="you@example.com" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p class="demo-note">Demo only: no emails are saved and no subscription is processed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-icon" aria-hidden="true">✈️</span>WanderGlow</a>
+          <p>A demo travel agency website built with HTML and CSS to showcase Liquid Glass design.</p>
+          <div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="#packages">Tour Packages</a></li><li><a href="booking.html">Book a Trip</a></li></ul>
+        </div>
+        <div>
+          <h4>Popular Destinations</h4>
+          <ul><li><a href="destinations.html#manali">Manali</a></li><li><a href="destinations.html#goa">Goa</a></li><li><a href="destinations.html#bali">Bali</a></li><li><a href="destinations.html#dubai">Dubai</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact (demo placeholders)</h4>
+          <ul><li>📍 123 Sample Street, Demo City</li><li>📞 +91 00000 00000</li><li>✉️ hello@example.com</li></ul>
+        </div>
+      </div>
+      <p class="copy">© 2026 WanderGlow. Demo project for learning HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
